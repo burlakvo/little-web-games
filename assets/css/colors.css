@@ -1,0 +1,11 @@
+body {
+    --day-black: #2d3436;
+    --day-white: #fff;
+    --black: #2d3436;
+    --white: #fff;
+}
+
+body.night {
+    --day-black: #dfe6e9;
+    --day-white: #2d3436;
+}

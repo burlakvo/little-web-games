@@ -1,0 +1,25 @@
+.button,
+.input {
+    padding: 0.5rem 1rem;
+    background-color: var(--day-white);
+    color: var(--day-black);
+    border: 0.1rem solid var(--day-black);
+    font-size: 1rem;
+}
+.button:focus,
+.input:focus {
+    outline: none;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: var(--day-black);
+    color: var(--day-white);
+}
+.button:active {
+    background-color: var(--day-white);
+    color: var(--day-black);
+}
+.button[disabled] {
+    opacity: 0.5;
+}

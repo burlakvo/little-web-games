@@ -1,0 +1,21 @@
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav_elem {
+    padding: 0.5rem;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+    font-size: 1rem;
+    transition: all .3s;
+}
+.nav_elem:hover {
+    cursor: pointer;
+    color: var(--day-white);
+    background-color: var(--day-black);
+}
+.nav_elem_active {
+    color: var(--day-white);
+    background-color: var(--day-black);
+}

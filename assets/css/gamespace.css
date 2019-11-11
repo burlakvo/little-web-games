@@ -1,0 +1,24 @@
+.game_section.section_active {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 3.5rem auto;
+}
+
+.game_space {
+    display: grid;
+    grid-template-areas:
+    "v"
+    "c";
+    grid-template-rows: auto 2.2rem;
+}
+
+.game_view {
+    grid-area: v;
+    display: flex;
+    flex-direction: column;
+}
+
+.game_control {
+    grid-area: c;
+    text-align: center;
+}

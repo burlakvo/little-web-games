@@ -1,0 +1,13 @@
+@media (max-width: 767px) {
+    .game_space {
+        grid-template-areas:
+                "c"
+                "v";
+        grid-template-rows: 2.2rem auto;
+    }
+
+    .game_view {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+}
