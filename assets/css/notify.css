@@ -1,0 +1,34 @@
+#notify {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 100;
+}
+
+#notify_window {
+    min-width: 50vw;
+    max-height: 90vh;
+    padding: 0.5rem;
+    color: var(--white);
+    border: 0.2rem solid var(--black);
+    background-color: var(--white);
+}
+
+#notify_window.notify_success {
+    border-color: #27ae60;
+    background-color: #2ecc71;
+}
+#notify_window.notify_info {
+    border-color: #2980b9;
+    background-color: #3498db;
+}
+#notify_window.notify_error {
+    border-color: #c0392b;
+    background-color: #e74c3c;
+}

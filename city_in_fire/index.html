@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>City in fire</title>
+	<link rel="stylesheet" href="./../assets/css/colors.css">
+	<link rel="stylesheet" href="./../assets/css/nav.css">
+	<link rel="stylesheet" href="./../assets/css/major.css">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<header>
+		<h1>City in fire: the game</h1>
+		<nav>
+			<div class="nav_elem nav_elem_active" data-target="city_section">City</div>
+			<div class="nav_elem" data-target="todo_section">TODO</div>
+		</nav>
+	</header>
+	<main>
+		<section class="game_section section_active" id="city_section">
+			<div id="street"></div>
+			<div>
+				<div class="score"></div>
+				<div id="fireman" style="left:-100px"></div>
+			</div>
+			<div>
+				<div class="score"></div>
+				<div id="firetruck" style="left:-100px"></div>
+			</div>
+		</section>
+		<section id="todo_section">
+			<h2>TODO</h2>
+			<ul>
+				<li>add night mode</li>
+			</ul>
+		</section>
+	</main>
+	<footer></footer>
+	<script src="./../assets/js/class-nav.js"></script>
+	<script src="./js/class-street.js"></script>
+	<script src="./js/class-building.js"></script>
+	<script src="./js/class-fire.js"></script>
+	<script src="./js/class-fireman.js"></script>
+	<script src="./js/script.js"></script>
+</body>
+</html>
