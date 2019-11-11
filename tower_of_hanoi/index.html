@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tower of Hanoi</title>
+    <link rel="stylesheet" href="./../assets/css/night_mode.css">
+    <link rel="stylesheet" href="./../assets/css/colors.css">
+    <link rel="stylesheet" href="./../assets/css/gamespace.css">
+    <link rel="stylesheet" href="./../assets/css/gamespace_mobile.css">
+    <link rel="stylesheet" href="./../assets/css/notify.css">
+    <link rel="stylesheet" href="./../assets/css/elements.css">
+    <link rel="stylesheet" href="./../assets/css/nav.css">
+    <link rel="stylesheet" href="./../assets/css/major.css">
+    <link rel="stylesheet" href="./../assets/css/major_mobile.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Tower of Hanoi: the game</h1>
+        <nav>
+            <div class="nav_elem nav_elem_active" data-target="game_section">Game</div>
+            <div class="nav_elem" data-target="rule_section">Rules</div>
+            <div class="nav_elem" data-target="todo_section">TODO</div>
+        </nav>
+        <div id="night_mode" title="Night mode switcher"></div>
+    </header>
+    <main>
+        <section id="game_section" class="game_section section_active">
+            <h2>Game</h2>
+            <div class="game_space">
+                <div class="game_view">
+                    <div class="tower_wrap">
+                        <div class="tower tower_start"></div>
+                        <div class="tower"></div>
+                        <div class="tower tower_target"></div>
+                    </div>
+                </div>
+                <div class="game_control">
+                    <button id="new_game" class="button">New game</button>
+                </div>
+            </div>
+        </section>
+        <section id="rule_section" class="">
+            <h2>Rules</h2>
+        </section>
+        <section id="todo_section" class="">
+            <h2>TODO</h2>
+            <ul>
+                <li>write rules</li>
+                <li>disallow moving after win</li>
+                <li>allow choose num of blocks</li>
+                <li>count moving of blocks (like "score")</li>
+            </ul>
+        </section>
+        <div id="notify">
+            <div id="notify_window"></div>
+        </div>
+    </main>
+    <footer>
+        &laquo;tower of hanoi: the game&raquo; <code>v0.1</code> made by Oleh Burlakov &copy; 2019
+    </footer>
+    <script src="./../assets/js/night_mode.js"></script>
+    <script src="./../assets/js/class-notify.js"></script>
+    <script src="./../assets/js/class-nav.js"></script>
+    <script src="./js/class-tower.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
