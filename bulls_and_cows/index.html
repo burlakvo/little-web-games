@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bulls & cows</title>
+    <link rel="stylesheet" href="./../assets/css/night_mode.css">
+    <link rel="stylesheet" href="./../assets/css/colors.css">
+    <link rel="stylesheet" href="./../assets/css/gamespace.css">
+    <link rel="stylesheet" href="./../assets/css/gamespace_mobile.css">
+    <link rel="stylesheet" href="./../assets/css/notify.css">
+    <link rel="stylesheet" href="./../assets/css/elements.css">
+    <link rel="stylesheet" href="./../assets/css/nav.css">
+    <link rel="stylesheet" href="./../assets/css/major.css">
+    <link rel="stylesheet" href="./../assets/css/major_mobile.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Bulls & cows: the game</h1>
+        <nav>
+            <div class="nav_elem nav_elem_active" data-target="guess_section">Guess</div>
+            <div class="nav_elem" data-target="self_section">Self</div>
+            <div class="nav_elem" data-target="make_section">Make</div>
+            <div class="nav_elem" data-target="rules_section">Rules</div>
+            <div class="nav_elem" data-target="thanks_section">Thanks</div>
+            <div class="nav_elem" data-target="todo_section">TODO</div>
+        </nav>
+        <div id="night_mode" title="Night mode switcher"></div>
+    </header>
+    <main>
+        <section id="guess_section" class="game_section section_active">
+            <h2>Guess</h2>
+            <div class="game_space">
+                <div class="game_view"></div>
+                <div class="game_control">
+                    <input type="number" id="guess_try_input" class="input">
+                    <button id="guess_try_button" class="button" disabled>Try!</button>
+                    <button id="guess_new_button" class="button">New game</button>
+                </div>
+            </div>
+        </section>
+        <section id="self_section" class="game_section">
+            <h2>Self</h2>
+            <div class="game_space">
+                <div class="game_view"></div>
+                <div class="game_control">
+                    <input type="number" id="self_try_input" class="input">
+                    <button id="self_try_button" class="button hidden" disabled>Try!</button>
+                    <button id="self_new_button" class="button">Make!</button>
+                </div>
+            </div>
+        </section>
+        <section id="make_section" class="game_section">
+            <h2>Make</h2>
+            <p>under constraction</p>
+        </section>
+        <section id="rules_section">
+            <h2>Rules</h2>
+            <h3>Game rules</h3>
+            <ol>
+                <li>Find company from 2 or more people</li>
+                <li>One player make a number from 4 digits that not repeat</li>
+                <li>Other players try to guess the number by calling their version of number, also from 4 digits without repeat</li>
+                <li>First player, who make the original number, compare players' number with personal</li>
+                <li>If players guess the digit, in their number, that contain in original, first player say <code>&laquo;cow&raquo;</code> for each digit</li>
+                <li>If players guess the place of digit, first player, instead cow, say <code>&laquo;bull&raquo;</code> also for each digit</li>
+                <li>Game end as win of players, when players guess original number, or as loose, if players use more than 9 tries</li>
+            </ol>
+            <h3>Example</h3>
+            <ul>
+                <li>First player (maker) make number <code>&laquo;1489&raquo;</code></li>
+                <li>Players call <code>&laquo;1234&raquo;</code></li>
+                <li>Maker compare numbers. First digit of players' number is <code>&laquo;1&raquo;</code>. The same as first digit in maker's number. No more digits in players' number havn't same position in maker's number, so maker say <code>&laquo;one bull&raquo;</code>. In players' number also exist <code>&laquo;4&raquo;</code>. So maker say <code>&laquo;and one cow&raquo;</code></li>
+                <li>Players call <code>&laquo;5763&raquo;</code></li>
+                <li>Maker compare numbers. Players' digits don't match with any of maker's digits, so maker say <code>&laquo;nothing&raquo;</code></li>
+            </ul>
+            <h3>&laquo;Guess&raquo; mode</h3>
+            <p>Computer make number for you. Try to guess it!</p>
+            <ol>
+                <li>Press <code>&laquo;new game&raquo;</code> button</li>
+                <li>Put your number to field</li>
+                <li>Press <code>&laquo;try!&raquo;</code> button</li>
+                <li>Think about result and put next number!</li>
+            </ol>
+            <p>If you want to start new game, you can press <code>&laquo;new game&raquo;</code> button at any moment and start from the beginning with new number from computer</p>
+            <h3>&laquo;Self&raquo; mode</h3>
+            <p>Make number for your friends and let them try to guess your number!</p>
+            <ol>
+                <li>Make your number and put it to field</li>
+                <li>Press <code>&laquo;make!&raquo;</code> button</li>
+                <li>Call your friends</li>
+                <li>They should put their number to field</li>
+                <li>When 4 digits putted to field, they need to press <code>&laquo;try!&raquo;</code> button</li>
+                <li>Think about result and put next number!</li>
+            </ol>
+            <p>If you want to start new game, you can press <code>&laquo;new game&raquo;</code> button at any moment and start from the beginning and make new number for your friends</p>
+            <h3>&laquo;Make&raquo; mode</h3>
+            <p>Now it's under construction</p>
+            <p>Your turn to make number for computer!</p>
+            <ul>
+                <li>instruction will be able after mode will done</li>
+            </ul>
+        </section>
+        <section id="thanks_section">
+            <h2>Thanks</h2>
+            <div>
+                Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>
+                from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+            </div>
+        </section>
+        <section id="todo_section">
+            <h2>TODO</h2>
+            <ul>
+                <li>limit of steps as 9</li>
+                <li>player loosing</li>
+                <li>make step by press <code>&laquo;Enter&raquo;</code>, but only in active mode</li>
+                <li>computer guessing</li>
+            </ul>
+        </section>
+        <div id="notify">
+            <div id="notify_window"></div>
+        </div>
+    </main>
+    <footer>
+        &laquo;bulls & cows: the game&raquo; made by Oleh Burlakov &copy; 2019
+    </footer>
+    <script src="./../assets/js/night_mode.js"></script>
+    <script src="./../assets/js/class-notify.js"></script>
+    <script src="./../assets/js/class-nav.js"></script>
+    <script src="js/class-bac.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
