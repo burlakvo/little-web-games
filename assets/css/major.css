@@ -40,6 +40,15 @@ h3 {
     font-size: 1.6rem;
     text-align: center;
 }
+
+section {
+    padding: 1rem;
+    display: none;
+}
+.section_active {
+    display: block;
+}
+
 main {
     grid-area: m;
     padding: 1rem;

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Star's Rider</title>
+    <link rel="stylesheet" href="./../assets/css/night_mode.css">
+    <link rel="stylesheet" href="./../assets/css/colors.css">
+    <link rel="stylesheet" href="./../assets/css/nav.css">
+    <link rel="stylesheet" href="./../assets/css/major.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Star's rider: the game</h1>
+        <nav>
+            <div class="nav_elem nav_elem_active" data-target="space_section">Space</div>
+            <div class="nav_elem" data-target="features_section">Features</div>
+            <div class="nav_elem" data-target="thanks_section">Thanks</div>
+            <div class="nav_elem" data-target="todo_section">TODO</div>
+        </nav>
+        <div id="night_mode" title="Night mode switcher"></div>
+    </header>
+    <main>
+        <section class="game_section section_active" id="space_section">
+            <canvas id="space" width="720" height="400"></canvas>
+        </section>
+        <section id="thanks_section">
+            <h2>Thanks</h2>
+            <!-- https://www.flaticon.com/packs/space-elements -->
+            <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <!-- asteroid -->
+            <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        </section>
+        <section id="todo_section">
+            <h2>TODO</h2>
+            <ul>
+                <li>how delta work?</li>
+                <li class="todo_done">asteroid as object</li>
+                <li class="todo_done">aliens</li>
+                <li class="todo_done">meteorite</li>
+                <li class="todo_done">black hole</li>
+                <li class="todo_done">personal draw functions to space objects</li>
+                <li class="todo_done">space objects lives</li>
+                <li class="todo_done">different point for different space objects</li>
+                <li class="todo_done">blusters as unlimited weapon</li>
+                <li class="todo_done">rockets as limited weapon</li>
+                <li>health of demaged space objects</li>
+                <li>sounds</li>
+                <li>information messages</li>
+                <li>drop from space objects</li>
+                <li>space objects ai</li>
+                <li>upgrade shuttle</li>
+                <li>shuttle shape for detect</li>
+                <li>bufs for shuttle: moveSpeed, armor, extra rockets, extra lives, additional bluster</li>
+                <li>start game button</li>
+                <li>pause / resume button</li>
+                <li>show achievements after the end</li>
+                <li>code refactoring</li>
+            </ul>
+        </section>
+        <section id="features_section">
+            <h2>Features</h2>
+            <ul>
+                <li>increase game speed each 6 levels</li>
+                <li>increase space object's limit each 9 levels</li>
+                <li>increase space objects per time each 10 levels</li>
+                <li>new object: meteor on 5 level</li>
+                <li>new object: ufo on 20 level</li>
+                <li>new object: enemy on 45 level</li>
+                <li>new object: black hole on 70 level</li>
+                <li>new weapon: bluster on level 8 (fire by clicking space button)</li>
+                <li>new weapon: rocket on level 30 (fire by clicking shift button)</li>
+                <li>get points for killing space objects: asteroid & meteor 50% of getting points, ufo & enemy - 100%</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        &laquo;star's rider: the game&raquo; made by Oleh Burlakov &copy; 2019
+    </footer>
+    <script src="./../assets/js/night_mode.js"></script>
+    <script src="./../assets/js/class-nav.js"></script>
+    <script src="./js/class-shuttle.js"></script>
+    <script src="./js/class-space.js"></script>
+    <script src="./js/class-live.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
