@@ -83,8 +83,6 @@ window.onload = () => {
         }
     });
 
-    set_blocks();
-
     const $set_blocks_button = document.getElementById("set_blocks");
     $set_blocks_button.addEventListener("click", set_blocks);
 
