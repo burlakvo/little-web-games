@@ -25,8 +25,8 @@ class Tower {
             const $target_block = this.$tower.querySelector(".tower_block"); // get tower block of target tower
 
             if ($moving_block) { // if "from" tower has block
-                const moving_block_size = $moving_block.dataset.size;
-                const target_block_size = $target_block ? $target_block.dataset.size : 0;
+                const moving_block_size = parseInt($moving_block.dataset.size);
+                const target_block_size =  $target_block ? parseInt($target_block.dataset.size) : 0;
 
                 if (moving_block_size < target_block_size || target_block_size === 0) {
                     this.$tower.prepend($moving_block);
@@ -41,7 +41,7 @@ class Tower {
                 }
             }
             else {
-                notify.show_notify("error", "nothing to moove");
+                notify.show_notify("error", "nothing to move");
             }
             $from_tower = "";
         }

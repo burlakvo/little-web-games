@@ -31,27 +31,21 @@
             <div class="game_space">
                 <div class="game_view">
                     <div class="tower_wrap">
-                        <div class="tower tower_start"></div>
-                        <div class="tower"></div>
-                        <div class="tower tower_target"></div>
+                        <div class="tower tower_start" data-pos="base"></div>
+                        <div class="tower tower_help" data-pos="help"></div>
+                        <div class="tower tower_target" data-pos="dest"></div>
                     </div>
                 </div>
                 <div class="game_control">
+                    <input type="text" id="block_num_input" class="input" value="3">
+                    <button id="set_blocks" class="button">Set blocks</button>
                     <button id="new_game" class="button">New game</button>
+                    <button id="comp_game" class="button">Comp solving</button>
                 </div>
             </div>
         </section>
         <section id="rule_section" class="">
             <h2>Rules</h2>
-        </section>
-        <section id="todo_section" class="">
-            <h2>TODO</h2>
-            <ul>
-                <li>write rules</li>
-                <li>disallow moving after win</li>
-                <li>allow choose num of blocks</li>
-                <li>count moving of blocks (like "score")</li>
-            </ul>
         </section>
         <div id="notify">
             <div id="notify_window"></div>
